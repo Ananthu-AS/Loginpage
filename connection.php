@@ -10,4 +10,5 @@
     catch (PDOException){
         echo "connection unsuccessfull";
     }
+    session_start();
 ?>
