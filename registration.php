@@ -60,9 +60,9 @@
                     <div class="mb-4">
                         <select class="form-select" aria-label="Default select example" name="question" required>
                             <option selected>Choose one security question.</option>
-                            <option value="1">Your nick name</option>
-                            <option value="2">Your pet name</option>
-                            <option value="3">Your favourite four digit number.</option>
+                            <option value="Your nick name">Your nick name</option>
+                            <option value="Your pet name">Your pet name</option>
+                            <option value="Your favourite four digit number.">Your favourite four digit number.</option>
                         </select>
                     </div>
                     <div class="mb-3"><input type="text" class="form-control p-2" placeholder="Your Answere" name="answere" required></div>
