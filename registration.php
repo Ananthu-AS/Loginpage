@@ -1,5 +1,5 @@
 <?php require 'connection.php';
-    $val=false;
+    $val=FALSE;
     if(isset($_POST['fname'])&&isset($_POST['lname'])&&isset($_POST['email'])&&isset($_POST['passcode'])&&isset($_POST['con_passcode'])&&isset($_POST['question'])
         &&isset($_POST['answere'])){
             $fname=$_POST['fname'];
@@ -19,7 +19,7 @@
             $statement->execute([':email'=>$email]);
             $data=$statement->fetch(PDO::FETCH_ASSOC);
             if($data){
-                $val=true;
+                $val=TRUE;
             }
             elseif($passcode!=$con_passcode){
                 $_SESSION["message"]="password does not match.";
